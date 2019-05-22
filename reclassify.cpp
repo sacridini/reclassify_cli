@@ -8,7 +8,11 @@
 
 using namespace std;
 
-void reclassify(string input_filename, string output_filename, string image_type, vector<int> reclass_in_values, vector<int> reclass_out_values);
+void reclassify(string input_filename,
+				string output_filename,
+				string image_type,
+				vector<int> reclass_in_values,
+				vector<int> reclass_out_values);
 
 int main(int argc, char **argv)
 {
@@ -93,14 +97,22 @@ int main(int argc, char **argv)
 	}
 
 	// Call Reclassify
-	reclassify(input_filename, output_filename, image_type, reclass_in_values, reclass_out_values);
+	reclassify(input_filename,
+			   output_filename,
+			   image_type,
+			   reclass_in_values,
+			   reclass_out_values);
 
 	cout << " " << endl;
 	cin.get();
 }
 
 
-void reclassify(string input_filename, string output_filename, string image_type, vector<int> reclass_in_values, vector<int> reclass_out_values)
+void reclassify(string input_filename,
+				string output_filename,
+				string image_type,
+				vector<int> reclass_in_values,
+				vector<int> reclass_out_values)
 {
 	GDALDataset* in_ds;
 	GDALDataset* out_ds;
