@@ -1,4 +1,3 @@
-
 #include "gdal_priv.h"
 #include "cpl_string.h"
 
@@ -9,7 +8,7 @@
 
 using namespace std;
 
-void reclassify(string input_filename, string output_filename, string image_type);
+void reclassify(string input_filename, string output_filename, string image_type, vector<int> reclass_in_values, vector<int> reclass_out_values);
 
 int main(int argc, char **argv)
 {
@@ -94,7 +93,7 @@ int main(int argc, char **argv)
 	}
 
 	// Call Reclassify
-	reclassify(input_filename, output_filename, image_type);
+	reclassify(input_filename, output_filename, image_type, reclass_in_values, reclass_out_values);
 
 	cout << " " << endl;
 	cin.get();
