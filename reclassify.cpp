@@ -86,16 +86,6 @@ int main(int argc, char **argv)
 		}
 	}
 
-	for (size_t x = 0; x < reclass_in_values.size(); x++)
-	{
-		cout << reclass_in_values.at(x) << endl;
-	}
-
-	for (size_t xx = 0; xx < reclass_in_values.size(); xx++)
-	{
-		cout << reclass_out_values.at(xx) << endl;
-	}
-
 	// Call Reclassify
 	reclassify(input_filename,
 			   output_filename,
