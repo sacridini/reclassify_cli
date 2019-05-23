@@ -1,8 +1,8 @@
 # Reclassify_cli
 CLI reclassify implementation using GDAL C++ API
 
-**INSTALLATION**  
-Linux: First, you need to install gdal.  
+**INSTALLATION**    
+	Linux: First you need to install gdal.   
 	
 	Ubuntu/Debian/Mint:  
 		sudo apt-get install build-essential libgdal-dev gdal-bin libproj-dev
