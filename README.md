@@ -1,16 +1,16 @@
 # Reclassify_cli
 CLI reclassify implementation using GDAL C++ API
 
-NAME
+**NAME**  
 	reclassify
 	- algorithm to reclassify images
 
-SYNOPSIS
+**SYNOPSIS**  
 	reclassify [-type img_data_type] [-in inputfile] [-ot outputfile]
 			   [-iv inputvalue1 inputvalue2 ... -iv_end]
 			   [-ov outputvalue1 outputvalue2 ... -ov_end]
 
-DESCRIPTION
+**DESCRIPTION**  
 	The reclassify utility is an image processing tool that changes the values from an input image to
 	the output values specified by the user.
 
@@ -40,11 +40,11 @@ DESCRIPTION
 	   At the end of the values specified, the user need to set the flag -ov_end even if you specify
 	   just a single value.
 
-EXAMPLES
+**EXAMPLES**  
 	. For instance, the the original values of the input image 3 and 15 will be changed to 1 and saved
 	as a new image.
 
 	reclassify -type uint8 -in ./data/rj_1985.tif -out ./data/rj_1985_reclass.tif -iv 3 15 -iv_end -ov 1 1 -ov_end
 
-AUTHOR
+**AUTHOR**  
 	Eduardo Ribeiro Lacerda eduardolacerdageo@gmail.com
