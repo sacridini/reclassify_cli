@@ -1,4 +1,4 @@
-# Reclassify_cli
+# Reclassify CLI
 CLI reclassify implementation using GDAL C++ API
 
 **INSTALLATION**    
