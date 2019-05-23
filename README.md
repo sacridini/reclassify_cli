@@ -65,4 +65,5 @@ CLI reclassify implementation using GDAL C++ API
 	reclassify -type uint8 -in ./data/rj_1985.tif -out ./data/rj_1985_reclass.tif -iv 3 15 -iv_end -ov 1 1 -ov_end
 
 **AUTHOR**  
-	Eduardo Ribeiro Lacerda eduardolacerdageo@gmail.com
+	Eduardo Ribeiro Lacerda  
+	Contact: eduardolacerdageo@gmail.com
