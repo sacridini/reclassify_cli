@@ -151,17 +151,15 @@ void reclassify(string input_filename,
 					output_Row[j] = (float)noData;
 				}
 
+				output_Row[j] = input_Row[j];
+
 				for (size_t x = 0; x < reclass_in_values.size(); x++)
 				{
 					if (input_Row[j] == reclass_in_values.at(x))
 					{
 						output_Row[j] = reclass_out_values.at(x);
 					}
-					else 
-					{
-						output_Row[j] = input_Row[j];
-					}
-				}
+				}	
 			}
 			out_ds->GetRasterBand(1)->RasterIO(GF_Write, 0, i, nCols, 1, output_Row, nCols, 1, gdal_raster_type, 0, 0);
 		}
@@ -192,17 +190,15 @@ void reclassify(string input_filename,
 					output_Row[j] = noData;
 				}
 
+				output_Row[j] = input_Row[j];
+				
 				for (size_t x = 0; x < reclass_in_values.size(); x++)
 				{
 					if (input_Row[j] == reclass_in_values.at(x))
 					{
 						output_Row[j] = reclass_out_values.at(x);
 					}
-					else
-					{
-						output_Row[j] = input_Row[j];
-					}
-				}
+				}	
 			}
 			out_ds->GetRasterBand(1)->RasterIO(GF_Write, 0, i, nCols, 1, output_Row, nCols, 1, gdal_raster_type, 0, 0);
 		}
@@ -233,17 +229,15 @@ void reclassify(string input_filename,
 					output_Row[j] = (uint8_t)noData;
 				}
 
+				output_Row[j] = input_Row[j];
+
 				for (size_t x = 0; x < reclass_in_values.size(); x++)
 				{
 					if (input_Row[j] == reclass_in_values.at(x))
 					{
 						output_Row[j] = reclass_out_values.at(x);
 					}
-					else
-					{
-						output_Row[j] = input_Row[j];
-					}
-				}
+				}				
 			}
 			out_ds->GetRasterBand(1)->RasterIO(GF_Write, 0, i, nCols, 1, output_Row, nCols, 1, gdal_raster_type, 0, 0);
 		}
@@ -274,17 +268,15 @@ void reclassify(string input_filename,
 					output_Row[j] = (uint16_t)noData;
 				}
 
+				output_Row[j] = input_Row[j];
+				
 				for (size_t x = 0; x < reclass_in_values.size(); x++)
 				{
 					if (input_Row[j] == reclass_in_values.at(x))
 					{
 						output_Row[j] = reclass_out_values.at(x);
 					}
-					else
-					{
-						output_Row[j] = input_Row[j];
-					}
-				}
+				}	
 			}
 			out_ds->GetRasterBand(1)->RasterIO(GF_Write, 0, i, nCols, 1, output_Row, nCols, 1, gdal_raster_type, 0, 0);
 		}
@@ -315,17 +307,15 @@ void reclassify(string input_filename,
 					output_Row[j] = (uint32_t)noData;
 				}
 
+				output_Row[j] = input_Row[j];
+
 				for (size_t x = 0; x < reclass_in_values.size(); x++)
 				{
 					if (input_Row[j] == reclass_in_values.at(x))
 					{
 						output_Row[j] = reclass_out_values.at(x);
 					}
-					else
-					{
-						output_Row[j] = input_Row[j];
-					}
-				}
+				}	
 			}
 			out_ds->GetRasterBand(1)->RasterIO(GF_Write, 0, i, nCols, 1, output_Row, nCols, 1, gdal_raster_type, 0, 0);
 		}
@@ -356,17 +346,15 @@ void reclassify(string input_filename,
 					output_Row[j] = (int)noData;
 				}
 
+				output_Row[j] = input_Row[j];
+
 				for (size_t x = 0; x < reclass_in_values.size(); x++)
 				{
 					if (input_Row[j] == reclass_in_values.at(x))
 					{
 						output_Row[j] = reclass_out_values.at(x);
 					}
-					else
-					{
-						output_Row[j] = input_Row[j];
-					}
-				}
+				}	
 			}
 			out_ds->GetRasterBand(1)->RasterIO(GF_Write, 0, i, nCols, 1, output_Row, nCols, 1, gdal_raster_type, 0, 0);
 		}
