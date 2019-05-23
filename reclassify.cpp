@@ -86,6 +86,8 @@ int main(int argc, char **argv)
 		}
 	}
 
+	cout << "Calling reclassify function on: " << input_filename << endl;
+
 	// Call Reclassify
 	reclassify(input_filename,
 			   output_filename,
@@ -93,8 +95,7 @@ int main(int argc, char **argv)
 			   reclass_in_values,
 			   reclass_out_values);
 
-	cout << " " << endl;
-	cin.get();
+	cout << "Finished Reclassify Process." << endl;
 }
 
 
